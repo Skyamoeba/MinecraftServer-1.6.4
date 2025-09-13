@@ -1,0 +1,1369 @@
+--#####################
+--## Version History ###################################################################################
+--#####################
+
+--[[
+
+Ver :	0.0.1
+Bld	:	85.IE.14.48
+
+
+
+--]]
+
+--#############################
+--[[   API Checker & Loader  ]]--#######################################################################
+--#############################
+
+local FMIAPI = "pastebin get T8UGRk8J MIAPI"
+while not fs.exists ("MIAPI") do
+	print("API not found... Fetching Now")
+	shell.run(FMIAPI)
+end
+os.unloadAPI("MIAPI")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+os.loadAPI("MIAPI")
+
+
+--######################################################################################################
+
+DefVERU      = {000, "0.0.0", 0, 0, 0, 0}
+DefPasConfig = {"1234", 0, 0} --password, on/off, counter
+
+
+DefComConfig = {10, 0, 0, 0, 0, 0, 0, 0, 0, 0} -- Number of blocks before the turtle emptys.
+
+DefTnnConfig = {10, 1, 1, 0, 0, 0, 0, 0, 0, 10}
+
+
+
+
+
+
+DefQrrConfig = {3, 3, 0 ,0 ,0 ,0 ,0 ,0 ,0 ,0}
+
+DefLogData   = {0, 0, 20} -- Tot num col, Torch Placement Counter, Empty Ratio Counter
+DefLocation  = {0, 0, 0, 1, 0} -- X, Y, Z, Facing, Mining 1/ Quarry 2
+--###########################
+--##  SAVE/LOAD COMMANDS   #############################################################################
+--###########################
+
+while not fs.exists ("MI-UPD.upd") do
+          MIAPI.DefaultSave(DefVERU, "MI-UPD.upd")
+          end
+while not fs.exists ("MI-PAS.cfg") do
+            MIAPI.DefaultSave(DefPasConfig, "MI-PAS.cfg")
+            end
+while not fs.exists ("MI-COM.cfg") do
+            MIAPI.DefaultSave(DefComConfig, "MI-COM.cfg")
+            end
+
+
+
+while not fs.exists ("MI-TNN.cfg") do
+            MIAPI.DefaultSave(DefTnnConfig, "MI-TNN.cfg")
+            end
+
+while not fs.exists ("MI-QRY.cfg") do
+            MIAPI.DefaultSave(DefQrrConfig, "MI-QRY.cfg")
+            end
+
+
+
+
+
+
+
+
+
+while not fs.exists ("MI-Location.cfg") do
+            MIAPI.DefaultSave(DefLocation, "MI-Location.cfg")
+            end
+
+while not fs.exists ("MI-LOG.dat") do
+            MIAPI.DefaultSave(DefLogData, "MI-LOG.dat")
+            end
+
+--##############################
+--## Main Version Information  # 85.IE.08.03
+--###################################################################################################
+--               Prog Ver         Prog Bld                  API Digital Ver
+--               |                |                          |
+local MVER = {"0.0.1", "85.IE.14.48", 001, MIAPI.APIVER[2], 003}
+--                                      |       |
+--                       Prog Digital Ver       API Ver
+
+local DEV = 1
+local depth = 0
+local collected = 0
+--##################
+--## Load Configs #################################################################################
+--##################
+PasConfig = MIAPI.Load("MI-PAS.cfg")
+ComConfig = MIAPI.Load("MI-COM.cfg")
+
+TnnConfig = MIAPI.Load("MI-TNN.cfg")
+QryConfig = MIAPI.Load("MI-QRY.cfg")
+
+LogData   = MIAPI.Load("MI-LOG.dat")
+Location  = MIAPI.Load("MI-Location.cfg")
+
+
+function LocSav()
+	MIAPI.Save(Location, "MI-Location.cfg")
+end
+
+function locationReset()
+Location[1] = 0
+Location[2] = 0
+Location[3] = 0
+Location[4] = 1
+LocSav()
+LogData[2] = 0
+LogData[3] = 0
+MIAPI.Save(LogData, "MI-LOG.dat")
+end
+
+
+--###############################
+--[[   Pastebin Get Commands   ]]--#####################################################################
+--###############################
+
+local DMIVerUGet = "pastebin get 6Qmw5YF5 MI-UPD.upd"
+local MIProgFetc = "pastebin get GyF1FJSH FTBUKLW-MI"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--#######################
+--##   MOVE COMMANDS   #################################################################################
+--#######################
+function tryRight()
+	turtle.turnRight()
+	if Location[4] == 1 then Location[4] = 2 elseif Location[4] == 2 then Location[4] = 3 elseif Location[4] == 3 then Location[4] = 4 elseif Location[4] == 4 then Location[4] = 1 end LocSav() InMenuDisplayMove()
+end
+
+function tryLeft()
+	turtle.turnLeft()
+	if Location[4] == 1 then Location[4] = 4 elseif Location[4] == 4 then Location[4] = 3 elseif Location[4] == 3 then Location[4] = 2 elseif Location[4] == 2 then Location[4] = 1 end LocSav() InMenuDisplayMove()
+end
+
+--#######################
+--##    Info Codes     #################################################################################
+--#######################
+
+INFOCODE = {"[FUEL]", "[MIPR]", "[DEV]"}
+
+
+
+--#########################
+--##   REFUEL COMMANDS   ###############################################################################
+--#########################
+local function REFUEL()
+	local fuelLevel = turtle.getFuelLevel()
+	if fuelLevel == "unlimited" or fuelLevel > 0 then
+		return
+	end
+
+	local function GETFUEL() 
+	tryRight()
+	tryRight()
+	turtle.select(14)
+	turtle.place()
+	turtle.select(13)
+	turtle.suck()
+	turtle.select(14)
+	turtle.dig() 
+	tryRight()
+	tryRight()
+	turtle.select(1)
+	end
+
+	local function TREFUEL()
+		GETFUEL()
+		for n=1,16 do
+			if turtle.getItemCount(n) > 0 then
+				turtle.select(13)
+				if turtle.refuel(1) then
+					turtle.select(1)
+					return true
+				end
+			end
+		end
+		turtle.select(1)
+		return false
+	end
+	
+	if not TREFUEL() then
+		--print( "Add more fuel to continue." )
+		term.setCursorPos(21,5) write(INFOCODE[1])
+		while not TREFUEL() do
+			sleep(1)
+		end
+		-- Pick up fuel chest and then return
+		--print( "Resuming Tunnel." )
+		term.setCursorPos(21,5) write("           ")
+		
+	end
+end
+
+function FillFuel()
+	local function FFGETFUEL() 
+	tryRight()
+	tryRight()
+	turtle.select(14)
+	turtle.place()
+	turtle.select(13)
+	turtle.suck()
+	turtle.select(14)
+	turtle.dig() 
+	tryRight()
+	tryRight()
+	turtle.select(1)
+	end
+
+	local function FFTREFUEL()
+		FFGETFUEL()
+		for n=1,16 do
+			if turtle.getItemCount(n) > 0 then
+				turtle.select(n)
+				if turtle.refuel(64) then
+					turtle.select(1)
+					return true
+				end
+			end
+		end
+		turtle.select(1)
+		return false
+	end
+	
+	if not FFTREFUEL() then
+		--print( "Add more fuel to continue." )
+		term.setCursorPos(21,5) write(INFOCODE[1])
+		while not FFTREFUEL() do
+			sleep(1)
+		end
+		-- Pick up fuel chest and then return
+		--print( "Resuming Tunnel." )
+		term.setCursorPos(21,5) write("           ")
+		
+	end
+
+	BOOTUP()
+end
+--######################################################################################################
+--######################################################################################################
+--######################################################################################################
+
+--######################
+--##   DIG COMMANDS   ##################################################################################
+--######################
+local function tryDig()
+	while turtle.detect() do
+		if turtle.dig() then
+			collect()
+			sleep(0.5)
+		else
+			return false
+		end
+	end
+	return true
+end
+
+local function tryDigUp()
+	while turtle.detectUp() do
+		if turtle.digUp() then
+			collect()
+			sleep(0.5)
+		else
+			return false
+		end
+	end
+	return true
+end
+
+local function tryDigDown()
+	while turtle.detectDown() do
+		if turtle.digDown() then
+			collect()
+			sleep(0.5)
+		else
+			return false
+		end
+	end
+	return true
+end
+--######################################################################################################
+--######################################################################################################
+--######################################################################################################
+--######################################################################################################
+
+--#######################
+--##   MOVE COMMANDS   #################################################################################
+--#######################
+local function tryUp()
+	REFUEL()
+    while not turtle.up() do
+		if turtle.detectUp() then
+			if not tryDigUp() then
+				return false
+			end
+		elseif turtle.attackUp() then
+			collect()
+		else
+			sleep( 0.5 )
+		end
+	end
+	Location[2] = Location[2] + 1
+	LocSav()
+	InMenuDisplayMove()
+	return true
+end
+
+local function tryDown()
+	REFUEL()
+	while not turtle.down() do
+		if turtle.detectDown() then
+			if not tryDigDown() then
+				return false
+			end
+		elseif turtle.attackDown() then
+			collect()
+		else
+			sleep( 0.5 )
+		end
+	end
+	Location[2] = Location[2] - 1
+	LocSav()
+	InMenuDisplayMove()
+	return true
+end
+
+local function tryForward() -- Direction, Elevation, Latitude, Returning, Digging, Emptying, Refueling, Tourches, TraveledDiging, TravelReturn
+	REFUEL()
+	while not turtle.forward() do
+		if turtle.detect() then
+			if not tryDig() then
+				return false
+			end
+		elseif turtle.attack() then
+			collect()
+		else
+			sleep( 0.5 )
+		end
+	end
+	if Location[4] == 1 then Location[1] = Location[1] + 1
+elseif Location[4] == 2 then Location[3] = Location[3] + 1
+elseif Location[4] == 3 then Location[1] = Location[1] - 1
+elseif Location[4] == 4 then Location[3] = Location[3] - 1
+end
+if TnnConfig[3] == 1 then LogData[2] = LogData[2] + 1 MIAPI.Save(LogData, "MI-LOG.dat") end
+LogData[3] = LogData[3] + 1
+MIAPI.Save(LogData, "MI-LOG.dat")
+LocSav()
+InMenuDisplayMove()
+	return true
+end
+
+
+--######################################################################################################
+--######################################################################################################
+--######################################################################################################
+function RETURN()
+	tryRight()
+	tryRight()
+    for r= 1, LogData[4] do
+    tryForward()
+    end
+ end
+
+function RTMP()
+	tryLeft()
+	tryLeft()
+	print ("Mining Position Reset")
+	sleep(2)
+	return --MiningMainMenu()
+end
+
+function FinishPos()
+	if DEV == 1 then RTMP() end
+	return
+  end
+
+--########################
+--##   EMPTY COMMANDS   ################################################################################
+--########################
+function collect()
+	collected = collected + 1
+	if math.fmod(collected, 25) == 0 then
+		--print( "Mined "..collected.." items." ) -- TODO
+	end
+end
+
+function DROP()
+	for i= 13, 1, -1 do
+    turtle.select(i)
+    turtle.drop()
+end
+end
+
+function EMPTY()
+	tryRight()
+	tryRight()
+	tryDig()
+	turtle.select(16)
+	turtle.place()
+	DROP()
+	turtle.select(16)
+	turtle.dig() 
+	tryRight()
+	tryRight()
+	turtle.select(1)
+end
+ 
+
+
+--######################
+--##   Mining Options ##################################################################################
+--######################
+
+function TBThree()
+	turtle.placeDown()
+	tryDigUp()
+	tryLeft()
+	tryDig()
+	tryUp()
+	tryDig()
+	tryDigUp()
+	tryUp()
+	tryDig()
+	tryRight()
+	tryRight()
+	tryDig()
+	tryDown()
+	tryDig()
+	tryDown()
+	tryDig()
+	tryLeft()
+end
+
+function TBTwo()
+	turtle.placeDown()
+	tryDigUp()
+	tryLeft()
+	tryDig()
+	tryUp()
+	tryDig()
+	tryRight()
+	tryRight()
+	tryDig()
+	tryDown()
+	tryDig()
+	tryLeft()
+end
+
+function TRFWD()
+	tryDig()
+	tryForward()
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function DIGTUNNEL()
+	for n = 1, TnnConfig[1] do
+		if TnnConfig[2] == 1 then
+			InMenuDisplayMove()
+			--MIAPI.SplashBox()
+			--MIAPI.FuelGaugeMainMenu(22,12)
+            --CollectedTot()
+            --GPSLOCK(22,11)
+			TRFWD()
+			TBThree()
+			if LogData[3] > ComConfig[1] then EMPTY() LogData[3] = 0 MIAPI.Save(LogData, "MI-LOG.dat") end
+			
+			if TnnConfig[3] == 1 then 
+				if LogData[2] == 4 then
+					TourchesPlacment()
+					LogData[2] = 0
+					MIAPI.Save(LogData, "MI-LOG.dat")
+				end
+			end
+		else
+			TRFWD()
+			TBTwo()
+			if LogData[3] == ComConfig[1] then EMPTY() end
+
+		end
+	end
+end
+
+
+--#########################
+--##   Torches Options   ###############################################################################
+--#########################
+
+function GetTorchesFromChest()
+	tryRight()
+	tryRight()
+	turtle.select(15)
+	turtle.place()
+	turtle.select(12)
+	turtle.suck()
+	turtle.select(15)
+	turtle.dig() 
+	tryRight()
+	tryRight()
+end
+
+
+
+function MoveToTourchStart()
+	tryUp()
+	tryLeft()
+	tryForward()
+end
+
+function MoveToTourchFinish()
+	tryRight()
+	tryRight()
+	tryForward()
+	tryLeft()
+	tryDown()
+end
+
+function TDigAndPlace()
+		tryDig()
+		turtle.select(12)
+		turtle.place()
+		turtle.select(1)
+end
+
+function TDrop()
+	turtle.select(12)
+    turtle.drop()
+end
+
+function TEmpty()
+	tryRight()
+	tryRight()
+	turtle.select(16)
+	turtle.place()
+	TDrop()
+	turtle.select(16)
+	turtle.dig() 
+	tryRight()
+	tryRight()
+	turtle.select(1)
+end
+
+
+-- Main Commands for Tourches
+
+function TourchesPlacment()
+	GetTorchesFromChest()
+	MoveToTourchStart()
+	TDigAndPlace()
+	MoveToTourchFinish()
+	TEmpty()
+end
+
+--##############################
+--##   MAIN TUNNEL COMMANDS   ##########################################################################
+--##############################
+
+function Tunnel()
+-- Mine in a tunnel pattern until we hit something we can't dig
+
+--TODO Add MI-Location here ( 0 = Default 1 = Mining 2 = Quarry)
+
+DIGTUNNEL()
+
+term.setCursorPos(22, 7)
+write("Returning")
+ZeroReset()
+--RETURN()
+
+--print( "Tunnel complete." )
+--print( "Mined "..collected.." items total." )
+LogData[1] = collected + LogData[1]
+MIAPI.Save(LogData, "MI-LOG.dat")
+EMPTY()
+
+--FinishPos()
+LogData[2] = 0 MIAPI.Save(LogData, "MI-LOG.dat")
+BOOTUP()
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--######################################################################################################
+function ZeroReset()
+		if Location[1] == 0 then else RSTX() end
+		if Location[2] == 0 then else RSTY() end
+		if Location[3] == 0 then else RSTZ() end
+		if Location[4] == 1 then else RSTNorth() end
+end
+
+function TunnelReset()
+		if Location[2] == 0 then else RSTY() end
+		if Location[3] == 0 then else RSTZ() end
+		if Location[4] == 1 then else RSTNorth() end
+end
+
+function RSTNorth()
+	if Location[4] == 2 then tryLeft() end
+	if Location[4] == 3 then tryLeft() tryLeft() end
+	if Location[4] == 4 then tryRight() end
+	ZeroReset()
+end
+
+function RSTX()
+	if Location[1] > 0 then
+		if Location[4] == 3 then tryForward() end
+		if Location[4] == 4 then tryLeft() end
+		if Location[4] == 1 then tryLeft() tryLeft() end
+		if Location[4] == 2 then tryLeft() tryLeft() tryLeft() end
+	end
+	if Location[1] < 0 then
+		if Location[4] == 1 then tryForward() end
+		if Location[4] == 2 then tryLeft() end
+		if Location[4] == 3 then tryLeft() tryLeft() end
+		if Location[4] == 4 then tryLeft() tryLeft() tryLeft() end
+	end
+		sleep(1)
+		ZeroReset()
+end
+
+function RSTY()
+	if Location[2] > 0 then tryDown() end
+	if Location[2] < 0 then tryUp() end
+	ZeroReset()
+end
+
+function RSTZ()
+			if Location[3] > 0 then 
+				if Location[4] == 4 then tryForward() end
+				if Location[4] == 1 then tryLeft() end
+				if Location[4] == 2 then tryLeft() tryLeft() end
+				if Location[4] == 3 then tryLeft() tryLeft() tryLeft() end
+				--tryForward()
+			end
+				--sleep(1)
+				--ZeroReset()
+			if Location[3] < 0 then
+				if Location[4] == 2 then tryForward() end
+				if Location[4] == 1 then tryRight() end
+				if Location[4] == 4 then tryRight() tryRight()  end
+				if Location[4] == 3 then tryRight() tryRight() tryRight() end
+				--tryForward()
+			end
+		sleep(1)
+		ZeroReset()
+end
+
+--######################################################################################################
+
+function DIGQuarry()
+local alternate = 0
+local done = false
+while not done do
+	for n=1,QryConfig[1] do
+		for m=1,QryConfig[1]-1 do
+			if not tryForward() then
+				done = true
+				break
+			end
+		end
+		if done then
+			break
+		end
+		if n<QryConfig[1] then
+			if math.fmod(n + alternate,2) == 0 then
+				tryLeft()
+				if not tryForward() then
+					done = true
+					break
+				end
+				tryLeft()
+			else
+				tryRight()
+				if not tryForward() then
+					done = true
+					break
+				end
+				tryRight()
+			end
+		end
+	end
+	if done then
+		break
+	end
+	
+	if QryConfig[1] > 1 then
+		if math.fmod(QryConfig[1],2) == 0 then
+			turnRight()
+		else
+			if alternate == 0 then
+				tryLeft()
+			else
+				tryRight()
+			end
+			alternate = 1 - alternate
+		end
+	end
+	
+	if not tryDown() then
+		done = true
+		break
+	end
+	QRPlate()
+end
+
+end
+
+function QRPlate()
+--MIAPI.SplashBox()
+--MIAPI.FuelGaugeMainMenu(22,12)
+--CollectedTot()
+--GPSLOCK(22,11)
+if LogData[3] > ComConfig[1] then EMPTY() LogData[3] = 0 MIAPI.Save(LogData, "MI-LOG.dat") end
+end
+
+function Quarry()
+	DIGQuarry()
+	ZeroReset()
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--#####################
+--##[ SETTINGS MENU ]################################################################################################
+--#####################
+
+
+
+function Blank()
+	term.clear()
+	print("Option not used")
+	print("Reserve for future functions")
+	sleep(3)
+	Settings()
+end
+
+
+--#######################
+--##[ Tunnel Settings ]##############################################################################################
+--#######################
+function TSAVE()
+	TnnConfig[10] = TnnConfig[1]
+	MIAPI.Save(TnnConfig, "MI-TNN.cfg")
+	TnnConfig = MIAPI.Load("MI-TNN.cfg")
+end
+
+function TunnelLength()
+TUNNLHP = {"Tunnel Length", "Last used length : ", "Change Tunnel Length? y/n", "New tunnel length               "}
+TUNNLHF = {BOOTUP, TunnelLength, TSAVE}
+TUNNLHS = {TnnConfig, 1, "MI-COM.cfg", 1}
+MIAPI.UniversalSettingN(TUNNLHP, TUNNLHF, TUNNLHS)
+end
+
+
+function TunnelSettings()
+	TSSE = {"Tunnel Settings", "Tunnel Length", "P Torch", "3x3 tunnel", "Not Used", "Back"}
+	TSFL = {TunnelLength, PTorchYN, XbyXT, Blank , Settings}
+	TSID = {}
+	MIAPI.MENU(3,1, 3,3, TSSE, TSFL, 5, TSID, 0)
+end
+
+
+--#######################
+--##[ Quarry Settings ]##############################################################################################
+--#######################
+
+function QSAVE()
+	QryConfig[10] = QryConfig[1]
+	MIAPI.Save(QryConfig, "MI-QRY.cfg")
+	QryConfig = MIAPI.Load("MI-QRY.cfg")
+end
+
+function QuarrySize()
+		QUARLHP = {"Quarry Size", "Last used length : ", "Change Quarry Size? y/n", "New Quarry Size             "}
+		QUARLHF = {BOOTUP, QuarrySize, QSAVE}
+		QUARLHS = {QryConfig, 1, "MI-QRY.cfg", 1}
+		MIAPI.UniversalSettingN(QUARLHP, QUARLHF, QUARLHS)
+
+end
+
+function QuarrySettings()
+	QSSE = {"Quarry Settings", "Quarry Size", "Not Used", "Not Used", "Not Used", "Back"}
+	QSFL = {QuarrySize, Blank, Blank, Blank , Settings}
+	QSID = {}
+	MIAPI.MENU(3,1, 3,3, QSSE, QSFL, 5, QSID, 0)
+end
+
+--#########################
+--##[ Computer Settings ]##############################################################################################
+--#########################
+
+function EmptyRate()
+		EMRTLHP = {"Empty Rate", "Last Setting : ", "Change Empty Rate? y/n", "New Empty Rate :                 "}
+		EMRTLHF = {BOOTUP, QuarrySize, QSAVE}
+		EMRTLHS = {ComConfig, 1, "MI-COM.cfg", 1}
+		MIAPI.UniversalSettingN(EMRTLHP, EMRTLHF, EMRTLHS)
+end
+
+
+function CompSettings()
+	CSSE = {"Computer Settings", "Empty Rate (".. ComConfig[1]..")", "Not Used", "Not Used", "Not Used", "Back"}
+	CSFL = {EmptyRate, Blank, Blank, Blank , Settings}
+	CSID = {}
+	MIAPI.MENU(3,1, 3,3, CSSE, CSFL, 5, CSID, 0)
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function ResetErr()
+
+end
+
+function Settings()
+	MMSE = {"Settings Menu V2", "Tunnel Settings", "Quarry Settings", "Comp Settings", "Reset Errors", "Back"}
+	MMFL = {TunnelSettings, QuarrySettings, CompSettings, Blank , BOOTUP}
+	MMID = {}
+	MIAPI.MENU(3,1, 3,3, MMSE, MMFL, 5, MMID, 0)
+end
+
+function Help()
+	MIAPI.SplashBox2()
+	term.setCursorPos(3,3)
+	write("Slot 14 = Fuel Chest")
+	term.setCursorPos(3,4)
+	write("Slot 15 = Torches Chest")
+	term.setCursorPos(3,5)
+	write("Slot 16 = Inventory Input Chest")
+    term.setCursorPos(3,6)
+	write ("Press any key to continue")
+    os.pullEvent("key")
+    BOOTUP()
+end	
+
+
+
+
+function Shutdown()
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error = {0,0,0,0,0,0,0,0,0}
+
+
+
+function SplashUpdate() -- Adds status notifications for Password on / update aviliable
+  if MIUDA == 1 then
+  term.setCursorPos(22,2)
+  write("  New Update!")
+  term.setCursorPos(22,3)
+  write("VER : ") write(VERU[2])
+  term.setCursorPos(22,3)
+  else
+    if Error[1] == 1 then
+      term.setTextColor((TXTCOL[15]))
+      term.setCursorPos(22,2)
+      write("")
+      term.setCursorPos(22,3)
+      write("  Error Detected")
+      term.setCursorPos(22,4)
+      write("")
+      term.setCursorPos(22,5)
+      write("  [SAFE  MODE]  ")
+      term.setTextColor((TXTCOL[1]))
+    else
+      term.setCursorPos(22,2)
+      write("")
+      term.setCursorPos(22,3)
+      write("  FTBUKLW - MI")
+      if DBLD == 1 then term.setCursorPos(22,4) write(BIDVER) else term.setCursorPos(22,4) write("") end
+      term.setCursorPos(22,5)
+      write("")
+    end
+    end
+
+    if PasConfig[2] == 1 then term.setCursorPos(22,19) term.setTextColor((TXTCOL[15])) write("[Locked]") term.setTextColor((TXTCOL[1])) end
+    if ERRUPDATE == 1 then term.setCursorPos(47,5) term.setTextColor((TXTCOL[15])) write("ERR") term.setTextColor((TXTCOL[1])) end
+
+end
+
+
+
+function SplashProgInfo()
+  if Error[1] == 1 then
+    if Error[2] == 1 then
+      writeError(3, 2, ErrPrint[1])
+    end
+    if Error[3] == 1 then
+      writeError(3, 3, ErrPrint[2])
+    end
+    if Error[4] == 1 then
+      writeError(3, 4, ErrPrint[3])
+    end
+    if Error[5] == 1 then
+      writeError(20, 3, ErrPrint[4])
+    end
+    if Error[6] == 1 then
+      writeError(20, 4, ErrPrint[5])
+    end
+    if Error[7] == 1 then
+      writeError(20, 2, ErrPrint[6])
+    end
+    if Error[8] == 1 then
+      writeError(3, 5, ErrPrint[7])
+    end
+    if Error[9] == 1 then
+      writeError(20, 5, ErrPrint[8])
+    end
+  else
+  term.setCursorPos(3,2)
+  write('Ver: '..MVER[1])
+  term.setCursorPos(3,3)
+  write('Bld: '..MVER[2])
+  term.setCursorPos(3,4)
+  write('API: '..MVER[4])
+  if DEV == 1 then term.setCursorPos(3,5) write('DEV: Computer 2') end
+end
+end
+
+
+function GPSLOCK()
+Location  = MIAPI.Load("MI-Location.cfg")
+  GX = Location[1]
+  GY = Location[2]
+  GZ = Location[3]
+  FZ = Location[4]
+
+
+term.setCursorPos(22, 10)
+write('Dir: ')if FZ == 1 then write('North') elseif FZ == 2 then write('East ') elseif FZ == 3 then write('South') elseif FZ == 4 then write('West ') end
+term.setCursorPos(22, 11)
+write('Loc: '..GX..','..GY..','..GZ..'')
+end
+
+function CollectedTot()
+	term.setCursorPos(22 ,7)
+	write("Tot Col : "..LogData[1])
+end
+
+function StatusDisplay()
+	if FuelStatus == 1 then term.setCursorPos(21,5) term.setTextColor(colors.red) write(INFOCODE[1]) term.setTextColor(colors.white)end
+	if DEV == 1 then term.setCursorPos(33,1) term.setTextColor(colors.red) write(INFOCODE[3]) term.setTextColor(colors.white) end
+end
+
+function InMenuDisplayMove()
+	MIAPI.SplashBox()
+	SplashProgInfo()
+  	SplashUpdate()
+  	MIAPI.FuelGaugeMainMenu(22,12)
+  	GPSLOCK(22,11)
+  	StatusDisplay()
+  	CollectedTot()
+end
+
+
+
+
+
+
+
+function InMenuDisplay()
+  SplashProgInfo()
+  SplashUpdate()
+  MIAPI.FuelGaugeMainMenu(22,12)
+  GPSLOCK(22,11)
+  StatusDisplay()
+  CollectedTot()
+end
+
+
+
+--######################################################################################################
+--######################################################################################################
+--######################################################################################################
+--######################################################################################################
+
+
+--MIAPI.Boot()
+
+function BOOTUP()
+MMSE = {"Main Menu V2", "Tunnel ("..TnnConfig[1]..")", "Quarry ("..QryConfig[1]..")", "Settings", "Help", 'Refuel', "Shut Down"}
+MMFL = {Tunnel, Quarry, Settings, Help, FillFuel, ExitProg}
+MMID = {InMenuDisplay}
+MIAPI.MENU(3,1, 3,7, MMSE, MMFL, 6, MMID, 2)
+end
+
+TestArea = 0
+FuelStatus = 0
+
+
+
+
+function ResumeMining()
+	if Location[5] == 1 then
+	TnnConfig[1] = TnnConfig[1] - Location[1]
+	MIAPI.Save(TnnConfig, "MI-TNN.cfg")
+	sleep(2)
+	Tunnel()
+	end
+	end
+
+
+
+
+
+function TestFunction()
+	--Quarry()
+	ZeroReset()
+	--ResumeMining()
+end
+
+
+
+
+
+if TestArea == 1 then
+	term.clear()
+	print("Test Area Active")
+	print(Location[4])
+	TestFunction()
+
+
+
+
+else
+	if Location[5] == 0 then locationReset() end
+	if Location[5] == 1 then ResumeMining()	end
+
+
+
+	BOOTUP()
+end

@@ -1,0 +1,705 @@
+2023-05-18 19:54:47 [INFO] Starting minecraft server version 1.6.4
+2023-05-18 19:55:05 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-18 19:55:10 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-18 19:55:28 [INFO] Loading properties
+2023-05-18 19:55:28 [WARNING] server.properties does not exist
+2023-05-18 19:55:28 [INFO] Generating new properties file
+2023-05-18 19:55:28 [INFO] Default game type: SURVIVAL
+2023-05-18 19:55:28 [INFO] Generating keypair
+2023-05-18 19:55:28 [INFO] Starting Minecraft server on *:25565
+2023-05-18 19:55:28 [INFO] [Aroma1997Core] Finished Initialization.
+2023-05-18 19:55:28 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-18 19:55:38 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-05-18 19:55:48 [WARNING] Failed to load operators list: java.io.FileNotFoundException: .\ops.txt (The system cannot find the file specified)
+2023-05-18 19:55:48 [WARNING] Failed to load white-list: java.io.FileNotFoundException: .\white-list.txt (The system cannot find the file specified)
+2023-05-18 19:55:49 [INFO] Preparing level "world"
+2023-05-18 19:55:50 [INFO] Preparing start region for level 0
+2023-05-18 19:55:51 [INFO] Preparing spawn area: 5%
+2023-05-18 19:55:52 [INFO] Preparing spawn area: 10%
+2023-05-18 19:55:53 [INFO] Preparing spawn area: 18%
+2023-05-18 19:55:54 [INFO] Preparing spawn area: 27%
+2023-05-18 19:55:56 [INFO] Preparing spawn area: 35%
+2023-05-18 19:55:57 [INFO] Preparing spawn area: 45%
+2023-05-18 19:55:58 [INFO] Preparing spawn area: 56%
+2023-05-18 19:55:59 [INFO] Preparing spawn area: 65%
+2023-05-18 19:56:00 [INFO] Preparing spawn area: 75%
+2023-05-18 19:56:01 [INFO] Preparing spawn area: 86%
+2023-05-18 19:56:02 [INFO] Preparing spawn area: 98%
+2023-05-18 19:56:02 [INFO] Done (13.272s)! For help, type "help" or "?"
+2023-05-18 19:56:02 [INFO] [Aroma1997Core] Starting up server.
+2023-05-18 19:56:04 [INFO] [Aroma1997Core] Started up server.
+2023-05-18 19:57:55 [INFO] Opped Skymoeba
+2023-05-18 19:58:47 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-18 19:58:51 [INFO] Skymoeba[/192.168.0.22:57464] logged in with entity id 3695 at (119.5, 67.0, -210.5)
+2023-05-18 19:58:51 [INFO] Skymoeba joined the game
+2023-05-18 20:10:00 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2023-05-18 20:49:38 [INFO] [Skymoeba: Saved the world]
+2023-05-18 20:49:48 [INFO] [Skymoeba: Stopping the server]
+2023-05-18 20:49:48 [INFO] Stopping server
+2023-05-18 20:49:48 [INFO] Saving players
+2023-05-18 20:49:48 [INFO] Closing listening thread
+2023-05-18 20:49:48 [INFO] Skymoeba left the game
+2023-05-18 20:49:49 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-18 20:49:49 [INFO] Saving worlds
+2023-05-18 20:49:49 [INFO] Saving chunks for level 'world'/Overworld
+2023-05-18 20:49:49 [INFO] Saving chunks for level 'world'/Nether
+2023-05-18 20:49:49 [INFO] Saving chunks for level 'world'/The End
+2023-05-18 20:49:49 [INFO] Saving chunks for level 'world'/Promised Land
+2023-05-18 20:49:49 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-05-18 20:49:49 [INFO] Saving chunks for level 'world'/Bedrock
+2023-05-18 20:49:49 [INFO] Saving chunks for level 'world'/Underdark
+2023-05-18 20:49:50 [INFO] Stopping server
+2023-05-18 20:49:50 [INFO] Saving players
+2023-05-18 20:49:50 [INFO] Saving worlds
+2023-05-19 20:58:51 [INFO] Starting minecraft server version 1.6.4
+2023-05-19 20:59:26 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-19 20:59:41 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-19 21:00:33 [INFO] Loading properties
+2023-05-19 21:00:33 [INFO] Default game type: SURVIVAL
+2023-05-19 21:00:33 [INFO] Generating keypair
+2023-05-19 21:00:33 [INFO] Starting Minecraft server on *:25565
+2023-05-19 21:00:33 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-19 21:00:33 [INFO] [Aroma1997Core] Finished Initialization.
+2023-05-19 21:00:47 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-05-19 21:01:03 [INFO] Preparing level "world"
+2023-05-19 21:01:06 [INFO] Preparing start region for level 0
+2023-05-19 21:01:07 [INFO] Preparing spawn area: 55%
+2023-05-19 21:01:07 [INFO] Done (4.860s)! For help, type "help" or "?"
+2023-05-19 21:01:07 [INFO] [Aroma1997Core] Starting up server.
+2023-05-19 21:01:10 [INFO] [Aroma1997Core] Started up server.
+2023-05-19 22:11:59 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-19 22:12:03 [INFO] Skymoeba[/192.168.0.22:64133] logged in with entity id 356 at (-248.57838420600285, 71.0, 1063.3265438022017)
+2023-05-19 22:12:03 [INFO] Skymoeba joined the game
+2023-05-19 22:19:34 [INFO] Skymoeba lost connection: disconnect.genericReason
+2023-05-19 22:19:34 [INFO] Skymoeba left the game
+2023-05-20 08:43:38 [INFO] Starting minecraft server version 1.6.4
+2023-05-20 08:44:15 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-20 08:44:32 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-20 08:45:14 [INFO] Loading properties
+2023-05-20 08:45:14 [INFO] Default game type: SURVIVAL
+2023-05-20 08:45:14 [INFO] Generating keypair
+2023-05-20 08:45:14 [INFO] Starting Minecraft server on *:25565
+2023-05-20 08:45:14 [INFO] [Aroma1997Core] Finished Initialization.
+2023-05-20 08:45:15 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-20 08:45:27 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-05-20 08:45:39 [INFO] Preparing level "world"
+2023-05-20 08:45:41 [INFO] Preparing start region for level 0
+2023-05-20 08:45:42 [INFO] Done (2.932s)! For help, type "help" or "?"
+2023-05-20 08:45:42 [INFO] [Aroma1997Core] Starting up server.
+2023-05-20 08:45:45 [INFO] [Aroma1997Core] Started up server.
+2023-05-20 08:46:41 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-20 08:46:45 [INFO] Skymoeba[/192.168.0.22:53168] logged in with entity id 319 at (-262.2377573677618, 73.23644105499514, 1084.0783606874154)
+2023-05-20 08:46:45 [INFO] Skymoeba joined the game
+2023-05-20 09:03:03 [INFO] [Skymoeba: Saved the world]
+2023-05-20 09:03:10 [INFO] Skymoeba lost connection: disconnect.quitting
+2023-05-20 09:03:10 [INFO] Skymoeba left the game
+2023-05-20 11:58:45 [INFO] Saving...
+2023-05-20 11:58:45 [INFO] Saved the world
+2023-05-20 11:58:52 [INFO] Unknown command. Try /help for a list of commands
+2023-05-20 11:59:00 [INFO] [Server] hello world
+2023-05-20 11:59:16 [INFO] Stopping the server
+2023-05-20 11:59:16 [INFO] Stopping server
+2023-05-20 11:59:16 [INFO] Saving players
+2023-05-20 11:59:16 [INFO] Saving worlds
+2023-05-20 11:59:16 [INFO] Closing listening thread
+2023-05-20 11:59:16 [INFO] Saving chunks for level 'world'/Overworld
+2023-05-20 11:59:16 [INFO] Saving chunks for level 'world'/Nether
+2023-05-20 11:59:16 [INFO] Saving chunks for level 'world'/The End
+2023-05-20 11:59:16 [INFO] Saving chunks for level 'world'/Promised Land
+2023-05-20 11:59:16 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-05-20 11:59:16 [INFO] Saving chunks for level 'world'/Bedrock
+2023-05-20 11:59:16 [INFO] Saving chunks for level 'world'/Underdark
+2023-05-20 11:59:16 [INFO] Stopping server
+2023-05-20 11:59:16 [INFO] Saving players
+2023-05-20 11:59:16 [INFO] Saving worlds
+2023-05-20 15:42:21 [INFO] Starting minecraft server version 1.6.4
+2023-05-20 15:43:03 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-20 15:43:19 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-20 15:43:54 [INFO] Loading properties
+2023-05-20 15:43:54 [INFO] Default game type: SURVIVAL
+2023-05-20 15:43:54 [INFO] Generating keypair
+2023-05-20 15:43:54 [INFO] Starting Minecraft server on *:25565
+2023-05-20 15:43:54 [INFO] [Aroma1997Core] Finished Initialization.
+2023-05-20 15:43:54 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-20 15:44:06 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-05-20 15:44:19 [INFO] Preparing level "world"
+2023-05-20 15:44:21 [INFO] Preparing start region for level 0
+2023-05-20 15:44:22 [INFO] Done (2.980s)! For help, type "help" or "?"
+2023-05-20 15:44:22 [INFO] [Aroma1997Core] Starting up server.
+2023-05-20 15:44:26 [INFO] [Aroma1997Core] Started up server.
+2023-05-20 16:20:43 [INFO] --- Showing help page 1 of 14 (/help <page>) ---
+2023-05-20 16:20:43 [INFO] /ccdebug help
+2023-05-20 16:20:43 [INFO] /debug <start|stop>
+2023-05-20 16:20:43 [INFO] /defaultgamemode <mode>
+2023-05-20 16:20:43 [INFO] /deop <player>
+2023-05-20 16:20:43 [INFO] /effect <player> <effect> [seconds] [amplifier]
+2023-05-20 16:20:43 [INFO] /enchant <player> <enchantment ID> [level]
+2023-05-20 16:20:43 [INFO] flimflam <player> [<effect>]
+2023-05-20 16:21:01 [INFO] --- Showing help page 2 of 14 (/help <page>) ---
+2023-05-20 16:21:01 [INFO] Use /forge <subcommand>. Subcommands are tps, track
+2023-05-20 16:21:01 [INFO] 
+2023-05-20 16:21:01 [INFO] /givedrone <player-name> <species-name>
+2023-05-20 16:21:01 [INFO] /givequeen <player-name> <species-name>
+2023-05-20 16:21:01 [INFO] /mail help
+2023-05-20 16:21:01 [INFO] /myst-permissions <player> <restrict|permit> <entry|depart> <all|dimid>
+2023-05-20 16:21:01 [INFO] /nick <new nickname>
+2023-05-20 16:21:06 [INFO] --- Showing help page 3 of 14 (/help <page>) ---
+2023-05-20 16:21:06 [INFO] /pardon-ip <address>
+2023-05-20 16:21:06 [INFO] /prdebug {lagpart|debugpart|reading} {on|off}
+2023-05-20 16:21:06 [INFO] /save-all
+2023-05-20 16:21:06 [INFO] /spawnforest <player-name> <species-name>
+2023-05-20 16:21:06 [INFO] /toggledownfall [dim]
+2023-05-20 16:21:06 [INFO] /tp [target player] <destination player> OR /tp [target player] <x> <y> <z>
+2023-05-20 16:21:06 [INFO] /tpx [subject:player] <target:player | target:dim [x y z]>
+2023-05-20 16:21:10 [INFO] --- Showing help page 4 of 14 (/help <page>) ---
+2023-05-20 16:21:10 [INFO] /weather <clear/rain/thunder> [duration in seconds]
+2023-05-20 16:21:10 [INFO] /xu_killmobs
+2023-05-20 16:21:10 [INFO] iskamiunlocked
+2023-05-20 16:21:10 [INFO] You have nothing to do here. This is not finished. Go away!
+2023-05-20 16:21:10 [INFO] /ban-ip <address|name> [reason ...]
+2023-05-20 16:21:10 [INFO] /clear <player> [item] [data]
+2023-05-20 16:21:10 [INFO] 
+2023-05-20 16:21:21 [INFO] --- Showing help page 5 of 14 (/help <page>) ---
+2023-05-20 16:21:21 [INFO] /gamerule <rule name> <value> OR /gamerule <rule name>
+2023-05-20 16:21:21 [INFO] /give <player> <item> [amount] [data]
+2023-05-20 16:21:21 [INFO] /givesample <species> <chromosome> <allele>
+2023-05-20 16:21:21 [INFO] /kick <player> [reason ...]
+2023-05-20 16:21:21 [INFO] /kill
+2023-05-20 16:21:21 [INFO] luck <player> [<amount>]
+2023-05-20 16:21:21 [INFO] /pardon <name>
+2023-05-20 16:21:40 [INFO] --- Showing help page 6 of 14 (/help <page>) ---
+2023-05-20 16:21:40 [INFO] /save-off
+2023-05-20 16:21:40 [INFO] /scoreboard <objectives|players|teams>
+2023-05-20 16:21:40 [INFO] /seed
+2023-05-20 16:21:40 [INFO] /spawnpoint OR /spawnpoint <player> OR /spawnpoint <player> <x> <y> <z>
+2023-05-20 16:21:40 [INFO] /spawntree <player-name> <species-name>
+2023-05-20 16:21:40 [INFO] /spreadplayers <x> <z> <spreadDistance> <maxRange> <respectTeams true|false> <player ...>
+2023-05-20 16:21:40 [INFO] /stop
+2023-05-20 16:21:56 [INFO] --- Showing help page 7 of 14 (/help <page>) ---
+2023-05-20 16:21:56 [INFO] /testfor <player>
+2023-05-20 16:21:56 [INFO] /toggledownfall
+2023-05-20 16:21:56 [INFO] /tps
+2023-05-20 16:21:56 [INFO] /treekeeping help
+2023-05-20 16:21:56 [INFO] /xp <amount> [player] OR /xp <amount>L [player]
+2023-05-20 16:21:56 [INFO] 
+minetweaker name <id>[:<meta>]
+    Prints the unlocalized name of the specified item,    can be used as item or block name
+minetweaker liquid <id>[:<meta>]
+    Prints the unlocalized liquid name in the specified container,    con be used as liquid name
+minetweaker oredict
+    Prints a list of all ore dictionary entries
+minetweaker oredict <id>[:<meta>]
+    Prints the ore dictionary name(s) for the specified item
+minetweaker oredict <name>
+    Prints all items for the specified ore dictionary name
+minetweaker recipes <id>[:<meta>]
+    Prints all recipes for the specified item
+minetweaker fuel <id>[:<meta>]
+    Retrieves the fuel value for the specified item
+minetweaker reload
+    Reloads the server-side script (experimental)
+minetweaker logdamage=on
+    Enables damage logging
+minetweaker logdamage=off
+    Disables damage logging
+minetweaker reload
+    Reloads the server script
+2023-05-20 16:21:56 [INFO] /ban <name> [reason ...]
+2023-05-20 16:22:04 [INFO] --- Showing help page 8 of 14 (/help <page>) ---
+2023-05-20 16:22:04 [INFO] /banlist [ips|players]
+2023-05-20 16:22:04 [INFO] /beekeeping help
+2023-05-20 16:22:04 [INFO] bs version <modid>
+2023-05-20 16:22:04 [INFO] /buildcraft help
+2023-05-20 16:22:04 [INFO] /cofh help
+2023-05-20 16:22:04 [INFO] /debugtest
+2023-05-20 16:22:04 [INFO] /difficulty <new difficulty>
+2023-05-20 16:22:12 [INFO] --- Showing help page 9 of 14 (/help <page>) ---
+2023-05-20 16:22:12 [INFO] /dragonapi
+2023-05-20 16:22:12 [INFO] /dragondonators
+2023-05-20 16:22:12 [INFO] /forestry help
+2023-05-20 16:22:12 [INFO] /freq help
+2023-05-20 16:22:12 [INFO] /gamemode <mode> [player]
+2023-05-20 16:22:12 [INFO] /giveprincess <player-name> <species-name>
+2023-05-20 16:22:12 [INFO] /givetemplate <uid>
+2023-05-20 16:22:19 [INFO] --- Showing help page 10 of 14 (/help <page>) ---
+2023-05-20 16:22:19 [INFO] /guardstone
+2023-05-20 16:22:19 [INFO] /help [page|command name]
+2023-05-20 16:22:19 [INFO] /list
+2023-05-20 16:22:19 [INFO] /logisticspipes help
+2023-05-20 16:22:19 [INFO] /me <action ...>
+2023-05-20 16:22:19 [INFO] /modlogger
+2023-05-20 16:22:19 [INFO] /myst-agebook [dim]
+2023-05-20 16:22:31 [INFO] --- Showing help page 1 of 14 (/help <page>) ---
+2023-05-20 16:22:31 [INFO] /ccdebug help
+2023-05-20 16:22:31 [INFO] /debug <start|stop>
+2023-05-20 16:22:31 [INFO] /defaultgamemode <mode>
+2023-05-20 16:22:31 [INFO] /deop <player>
+2023-05-20 16:22:31 [INFO] /effect <player> <effect> [seconds] [amplifier]
+2023-05-20 16:22:31 [INFO] /enchant <player> <enchantment ID> [level]
+2023-05-20 16:22:31 [INFO] flimflam <player> [<effect>]
+2023-05-20 16:22:34 [INFO] --- Showing help page 11 of 14 (/help <page>) ---
+2023-05-20 16:22:34 [INFO] /myst-create dimId
+2023-05-20 16:22:34 [INFO] /myst-regenchunk [range] [dimId] [chunkX] [chunkZ]
+2023-05-20 16:22:34 [INFO] /myst-twi [dim] [true|false]
+2023-05-20 16:22:34 [INFO] ob_inventory store <player> OR ob_inventory restore <file>
+2023-05-20 16:22:34 [INFO] om_config_s save <modid> OR
+om_config_s help <modid> <category> <name> OR
+om_config_s get <modid> <category> <name> OR
+om_config_s clear <modid> <category> <name> OR
+om_config_s set <modid> <category> <name> <value>... OR
+om_config_s append <modid> <category> <name> <value>... OR
+om_config_s remove <modid> <category> <name> <value>... OR
+om_config_s default <modid> <category> <name> <value>... OR
+
+2023-05-20 16:22:34 [INFO] /op <player>
+2023-05-20 16:22:34 [INFO] /pg           type /pg for full list.
+2023-05-20 16:22:45 [INFO] --- Showing help page 12 of 14 (/help <page>) ---
+2023-05-20 16:22:45 [INFO] /playerinterface <action>
+2023-05-20 16:22:45 [INFO] /say <message ...>
+2023-05-20 16:22:45 [INFO] /scan
+2023-05-20 16:22:45 [INFO] /setidletimeout <Minutes until kick>
+2023-05-20 16:22:45 [INFO] /tell <player> <private message ...>
+2023-05-20 16:22:45 [INFO] 
+2023-05-20 16:22:45 [INFO] /playsound <sound> <player> [x] [y] [z] [volume] [pitch] [minimumVolume]
+2023-05-20 16:22:55 [INFO] --- Showing help page 13 of 14 (/help <page>) ---
+2023-05-20 16:22:55 [INFO] /save-on
+2023-05-20 16:22:55 [INFO] 
+2023-05-20 16:22:55 [INFO] /thaumcraft <action> [<player> [<params>]]
+2023-05-20 16:22:55 [INFO] /time <set|add> <value> [dim]
+2023-05-20 16:22:55 [INFO] /time <set|add> <value>
+2023-05-20 16:22:55 [INFO] /whitelist <on|off|list|add|remove|reload>
+2023-05-20 16:22:55 [INFO] /xu_killliving
+2023-05-20 16:23:00 [INFO] --- Showing help page 14 of 14 (/help <page>) ---
+2023-05-20 16:23:00 [INFO] /xu_killxp
+2023-05-20 16:23:00 [INFO] 
+/modflag list
+/modflag setregion
+/modflag removeregion
+/modflag set
+2023-05-20 16:23:00 [INFO] /xu_killitems
+2023-05-20 16:23:06 [INFO] Unknown command. Try /help for a list of commands
+2023-05-20 16:23:14 [INFO] Unknown command. Try /help for a list of commands
+2023-05-20 16:23:15 [INFO] Unknown command. Try /help for a list of commands
+2023-05-20 16:23:15 [INFO] Unknown command. Try /help for a list of commands
+2023-05-20 16:23:20 [INFO] Saving...
+2023-05-20 16:23:20 [INFO] Saved the world
+2023-05-20 17:46:21 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-20 17:46:27 [INFO] Skymoeba[/192.168.0.22:52386] logged in with entity id 317 at (-245.89146555343507, 71.0, 1063.5709960600122)
+2023-05-20 17:46:27 [INFO] Skymoeba joined the game
+2023-05-20 17:46:31 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2023-05-20 17:47:27 [INFO] Skymoeba lost connection: disconnect.genericReason
+2023-05-20 17:47:27 [INFO] Skymoeba left the game
+2023-05-20 17:48:13 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-20 17:48:16 [INFO] Skymoeba[/192.168.0.22:52551] logged in with entity id 1393 at (-245.89146555343507, 71.0, 1063.5709960600122)
+2023-05-20 17:48:16 [INFO] Skymoeba joined the game
+2023-05-20 18:17:45 [INFO] [Server] Hello Everyone
+2023-05-20 18:18:28 [INFO] Skymoeba lost connection: disconnect.quitting
+2023-05-20 18:18:28 [INFO] Skymoeba left the game
+2023-05-20 18:18:33 [INFO] Saving...
+2023-05-20 18:18:33 [INFO] Saved the world
+2023-05-20 23:20:09 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-20 23:20:13 [INFO] Skymoeba[/192.168.0.22:63745] logged in with entity id 37616 at (-211.81640095405058, 76.56387937332012, 1046.546309636626)
+2023-05-20 23:20:13 [INFO] Skymoeba joined the game
+2023-05-21 00:00:49 [INFO] [Skymoeba: Saved the world]
+2023-05-21 00:00:51 [INFO] Skymoeba lost connection: disconnect.quitting
+2023-05-21 00:00:51 [INFO] Skymoeba left the game
+2023-05-21 00:01:10 [INFO] Stopping the server
+2023-05-21 00:01:10 [INFO] Stopping server
+2023-05-21 00:01:10 [INFO] Saving players
+2023-05-21 00:01:10 [INFO] Saving worlds
+2023-05-21 00:01:10 [INFO] Saving chunks for level 'world'/Overworld
+2023-05-21 00:01:10 [INFO] Closing listening thread
+2023-05-21 00:01:10 [INFO] Saving chunks for level 'world'/Nether
+2023-05-21 00:01:10 [INFO] Saving chunks for level 'world'/The End
+2023-05-21 00:01:10 [INFO] Saving chunks for level 'world'/Promised Land
+2023-05-21 00:01:10 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-05-21 00:01:10 [INFO] Saving chunks for level 'world'/Bedrock
+2023-05-21 00:01:10 [INFO] Saving chunks for level 'world'/Underdark
+2023-05-21 00:01:11 [INFO] Stopping server
+2023-05-21 00:01:11 [INFO] Saving players
+2023-05-21 00:01:11 [INFO] Saving worlds
+2023-05-21 00:10:11 [INFO] Starting minecraft server version 1.6.4
+2023-05-21 00:10:29 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-21 00:10:33 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-21 00:10:51 [INFO] Loading properties
+2023-05-21 00:10:51 [INFO] Default game type: SURVIVAL
+2023-05-21 00:10:51 [INFO] Generating keypair
+2023-05-21 00:10:51 [INFO] Starting Minecraft server on *:25565
+2023-05-21 00:10:51 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-21 00:10:51 [INFO] [Aroma1997Core] Finished Initialization.
+2023-05-21 00:10:59 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-05-21 00:11:09 [INFO] Preparing level "world"
+2023-05-21 00:11:11 [INFO] Preparing start region for level 0
+2023-05-21 00:11:12 [INFO] Preparing spawn area: 5%
+2023-05-21 00:11:14 [INFO] Preparing spawn area: 7%
+2023-05-21 00:11:15 [INFO] Preparing spawn area: 12%
+2023-05-21 00:11:16 [INFO] Preparing spawn area: 18%
+2023-05-21 00:11:17 [INFO] Preparing spawn area: 24%
+2023-05-21 00:11:18 [INFO] Preparing spawn area: 32%
+2023-05-21 00:11:19 [INFO] Preparing spawn area: 40%
+2023-05-21 00:11:20 [INFO] Preparing spawn area: 50%
+2023-05-21 00:11:21 [INFO] Preparing spawn area: 59%
+2023-05-21 00:11:22 [INFO] Preparing spawn area: 68%
+2023-05-21 00:11:23 [INFO] Preparing spawn area: 77%
+2023-05-21 00:11:24 [INFO] Preparing spawn area: 88%
+2023-05-21 00:11:25 [INFO] Done (15.148s)! For help, type "help" or "?"
+2023-05-21 00:11:25 [INFO] [Aroma1997Core] Starting up server.
+2023-05-21 00:11:27 [INFO] [Aroma1997Core] Started up server.
+2023-05-21 00:12:42 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-21 00:12:46 [INFO] Skymoeba[/192.168.0.22:49533] logged in with entity id 5024 at (160.5, 73.0, 256.5)
+2023-05-21 00:12:46 [INFO] Skymoeba joined the game
+2023-05-21 00:20:02 [INFO] Skymoeba lost connection: disconnect.quitting
+2023-05-21 00:20:02 [INFO] Skymoeba left the game
+2023-05-21 00:20:22 [INFO] Stopping the server
+2023-05-21 00:20:22 [INFO] Stopping server
+2023-05-21 00:20:22 [INFO] Saving players
+2023-05-21 00:20:22 [INFO] Saving worlds
+2023-05-21 00:20:22 [INFO] Saving chunks for level 'world'/Overworld
+2023-05-21 00:20:22 [INFO] Closing listening thread
+2023-05-21 00:20:22 [INFO] Saving chunks for level 'world'/Nether
+2023-05-21 00:20:22 [INFO] Saving chunks for level 'world'/The End
+2023-05-21 00:20:22 [INFO] Saving chunks for level 'world'/Promised Land
+2023-05-21 00:20:22 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-05-21 00:20:22 [INFO] Saving chunks for level 'world'/Bedrock
+2023-05-21 00:20:22 [INFO] Saving chunks for level 'world'/Underdark
+2023-05-21 00:20:22 [INFO] Stopping server
+2023-05-21 00:20:22 [INFO] Saving players
+2023-05-21 00:20:22 [INFO] Saving worlds
+2023-05-21 11:47:23 [INFO] Starting minecraft server version 1.6.4
+2023-05-21 11:48:02 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-21 11:48:12 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-21 11:48:58 [INFO] Loading properties
+2023-05-21 11:48:58 [INFO] Default game type: SURVIVAL
+2023-05-21 11:48:58 [INFO] Generating keypair
+2023-05-21 11:48:58 [INFO] Starting Minecraft server on *:25565
+2023-05-21 11:48:58 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-21 11:48:58 [INFO] [Aroma1997Core] Finished Initialization.
+2023-05-21 11:49:11 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-05-21 11:49:24 [INFO] Preparing level "world"
+2023-05-21 11:49:27 [INFO] Preparing start region for level 0
+2023-05-21 11:49:28 [INFO] Preparing spawn area: 77%
+2023-05-21 11:49:28 [INFO] Done (3.511s)! For help, type "help" or "?"
+2023-05-21 11:49:28 [INFO] [Aroma1997Core] Starting up server.
+2023-05-21 11:49:30 [INFO] [Aroma1997Core] Started up server.
+2023-05-21 14:07:02 [INFO] An unknown error occurred while attempting to perform this command
+2023-05-21 14:13:50 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-21 14:14:00 [INFO] Skymoeba[/192.168.0.22:55935] logged in with entity id 300 at (175.50462610443162, 68.0, 261.088616193901)
+2023-05-21 14:14:00 [INFO] Skymoeba joined the game
+2023-05-21 14:45:59 [INFO] [Skymoeba: Saved the world]
+2023-05-21 14:46:07 [INFO] Skymoeba lost connection: disconnect.quitting
+2023-05-21 14:46:07 [INFO] Skymoeba left the game
+2023-05-21 21:19:04 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-21 21:19:14 [INFO] Skymoeba[/192.168.0.22:61295] logged in with entity id 24834 at (-54.09988118959649, 63.0, 459.425765861498)
+2023-05-21 21:19:14 [INFO] Skymoeba joined the game
+2023-05-21 21:34:46 [INFO] Saving...
+2023-05-21 21:34:46 [INFO] Saved the world
+2023-05-21 21:34:56 [INFO] [Skymoeba: Stopping the server]
+2023-05-21 21:34:56 [INFO] Stopping server
+2023-05-21 21:34:56 [INFO] Saving players
+2023-05-21 21:34:56 [INFO] Closing listening thread
+2023-05-21 21:34:56 [INFO] Skymoeba left the game
+2023-05-21 21:34:56 [INFO] Saving worlds
+2023-05-21 21:34:56 [INFO] Saving chunks for level 'world'/Overworld
+2023-05-21 21:34:56 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-21 21:34:56 [INFO] Saving chunks for level 'world'/Nether
+2023-05-21 21:34:56 [INFO] Saving chunks for level 'world'/The End
+2023-05-21 21:34:56 [INFO] Saving chunks for level 'world'/Promised Land
+2023-05-21 21:34:56 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-05-21 21:34:56 [INFO] Saving chunks for level 'world'/Bedrock
+2023-05-21 21:34:56 [INFO] Saving chunks for level 'world'/Underdark
+2023-05-21 21:34:57 [INFO] Stopping server
+2023-05-21 21:34:57 [INFO] Saving players
+2023-05-21 21:34:57 [INFO] Saving worlds
+2023-05-21 21:36:39 [INFO] Starting minecraft server version 1.6.4
+2023-05-21 21:36:58 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-21 21:37:03 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-21 21:37:23 [INFO] Loading properties
+2023-05-21 21:37:23 [INFO] Default game type: SURVIVAL
+2023-05-21 21:37:23 [INFO] Generating keypair
+2023-05-21 21:37:24 [INFO] Starting Minecraft server on *:25565
+2023-05-21 21:37:24 [INFO] [Aroma1997Core] Finished Initialization.
+2023-05-21 21:37:24 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-21 21:37:33 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-05-21 21:37:44 [INFO] Preparing level "world"
+2023-05-21 21:37:46 [INFO] Preparing start region for level 0
+2023-05-21 21:37:47 [INFO] Done (2.830s)! For help, type "help" or "?"
+2023-05-21 21:37:47 [INFO] [Aroma1997Core] Starting up server.
+2023-05-21 21:37:47 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-21 21:37:49 [INFO] [Aroma1997Core] Started up server.
+2023-05-21 21:37:50 [INFO] /192.168.0.22:63512 lost connection
+2023-05-21 21:37:53 [SEVERE] Reached end of stream for /192.168.0.22
+2023-05-21 21:37:57 [INFO] Skymoeba[/192.168.0.22:63529] logged in with entity id 233 at (-53.289832746273404, 42.0, 448.62814552103714)
+2023-05-21 21:37:57 [INFO] Skymoeba joined the game
+2023-05-21 22:16:19 [INFO] [Skymoeba: Saved the world]
+2023-05-21 22:16:34 [INFO] Unknown command. Try /help for a list of commands
+2023-05-21 22:16:41 [INFO] Saving...
+2023-05-21 22:16:41 [INFO] Saved the world
+2023-05-21 22:37:20 [INFO] [Skymoeba: Saved the world]
+2023-05-21 22:37:23 [INFO] Skymoeba lost connection: disconnect.quitting
+2023-05-21 22:37:23 [INFO] Skymoeba left the game
+2023-05-21 22:37:36 [INFO] Stopping the server
+2023-05-21 22:37:36 [INFO] Stopping server
+2023-05-21 22:37:36 [INFO] Saving players
+2023-05-21 22:37:36 [INFO] Saving worlds
+2023-05-21 22:37:36 [INFO] Saving chunks for level 'world'/Overworld
+2023-05-21 22:37:36 [INFO] Closing listening thread
+2023-05-21 22:37:36 [INFO] Saving chunks for level 'world'/Nether
+2023-05-21 22:37:36 [INFO] Saving chunks for level 'world'/The End
+2023-05-21 22:37:36 [INFO] Saving chunks for level 'world'/Promised Land
+2023-05-21 22:37:36 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-05-21 22:37:36 [INFO] Saving chunks for level 'world'/Bedrock
+2023-05-21 22:37:36 [INFO] Saving chunks for level 'world'/Underdark
+2023-05-21 22:37:37 [INFO] Stopping server
+2023-05-21 22:37:37 [INFO] Saving players
+2023-05-21 22:37:37 [INFO] Saving worlds
+2023-05-22 19:26:03 [INFO] Starting minecraft server version 1.6.4
+2023-05-22 19:26:38 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-22 19:26:53 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-22 19:27:46 [INFO] Loading properties
+2023-05-22 19:27:47 [INFO] Default game type: SURVIVAL
+2023-05-22 19:27:47 [INFO] Generating keypair
+2023-05-22 19:27:47 [INFO] Starting Minecraft server on *:25565
+2023-05-22 19:27:47 [INFO] [Aroma1997Core] Finished Initialization.
+2023-05-22 19:27:47 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-22 19:28:01 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-05-22 19:28:14 [INFO] Preparing level "world"
+2023-05-22 19:28:16 [INFO] Preparing start region for level 0
+2023-05-22 19:28:17 [INFO] Preparing spawn area: 72%
+2023-05-22 19:28:17 [INFO] Done (3.383s)! For help, type "help" or "?"
+2023-05-22 19:28:17 [INFO] [Aroma1997Core] Starting up server.
+2023-05-22 19:28:20 [INFO] [Aroma1997Core] Started up server.
+2023-05-22 22:55:57 [INFO] Unknown command. Try /help for a list of commands
+2023-05-22 22:56:01 [INFO] Unknown command. Try /help for a list of commands
+2023-05-22 22:56:06 [INFO] Saving...
+2023-05-22 22:56:06 [INFO] Saved the world
+2023-05-22 22:56:11 [INFO] Stopping the server
+2023-05-22 22:56:11 [INFO] Stopping server
+2023-05-22 22:56:11 [INFO] Saving players
+2023-05-22 22:56:11 [INFO] Saving worlds
+2023-05-22 22:56:11 [INFO] Saving chunks for level 'world'/Overworld
+2023-05-22 22:56:11 [INFO] Closing listening thread
+2023-05-22 22:56:11 [INFO] Saving chunks for level 'world'/Nether
+2023-05-22 22:56:11 [INFO] Saving chunks for level 'world'/The End
+2023-05-22 22:56:11 [INFO] Saving chunks for level 'world'/Promised Land
+2023-05-22 22:56:11 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-05-22 22:56:11 [INFO] Saving chunks for level 'world'/Bedrock
+2023-05-22 22:56:11 [INFO] Saving chunks for level 'world'/Underdark
+2023-05-22 22:56:12 [INFO] Stopping server
+2023-05-22 22:56:12 [INFO] Saving players
+2023-05-22 22:56:12 [INFO] Saving worlds
+2023-05-23 19:00:41 [INFO] Starting minecraft server version 1.6.4
+2023-05-23 19:01:11 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-23 19:01:18 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-23 19:02:19 [INFO] Loading properties
+2023-05-23 19:02:19 [INFO] Default game type: SURVIVAL
+2023-05-23 19:02:19 [INFO] Generating keypair
+2023-05-23 19:02:20 [INFO] Starting Minecraft server on *:25565
+2023-05-23 19:02:20 [INFO] [Aroma1997Core] Finished Initialization.
+2023-05-23 19:02:20 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-23 19:02:35 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-05-23 19:02:50 [INFO] Preparing level "world"
+2023-05-23 19:02:53 [INFO] Preparing start region for level 0
+2023-05-23 19:02:54 [INFO] Preparing spawn area: 63%
+2023-05-23 19:02:54 [INFO] Done (4.004s)! For help, type "help" or "?"
+2023-05-23 19:02:54 [INFO] [Aroma1997Core] Starting up server.
+2023-05-23 19:02:57 [INFO] [Aroma1997Core] Started up server.
+2023-05-23 21:20:52 [INFO] Stopping the server
+2023-05-23 21:20:52 [INFO] Stopping server
+2023-05-23 21:20:52 [INFO] Saving players
+2023-05-23 21:20:52 [INFO] Saving worlds
+2023-05-23 21:20:52 [INFO] Saving chunks for level 'world'/Overworld
+2023-05-23 21:20:52 [INFO] Closing listening thread
+2023-05-23 21:20:52 [INFO] Saving chunks for level 'world'/Nether
+2023-05-23 21:20:52 [INFO] Saving chunks for level 'world'/The End
+2023-05-23 21:20:52 [INFO] Saving chunks for level 'world'/Promised Land
+2023-05-23 21:20:52 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-05-23 21:20:52 [INFO] Saving chunks for level 'world'/Bedrock
+2023-05-23 21:20:52 [INFO] Saving chunks for level 'world'/Underdark
+2023-05-23 21:20:53 [INFO] Stopping server
+2023-05-23 21:20:53 [INFO] Saving players
+2023-05-23 21:20:53 [INFO] Saving worlds
+2023-05-24 19:16:08 [INFO] Starting minecraft server version 1.6.4
+2023-05-24 19:16:45 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-24 19:16:50 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-24 19:17:33 [INFO] Loading properties
+2023-05-24 19:17:33 [INFO] Default game type: SURVIVAL
+2023-05-24 19:17:33 [INFO] Generating keypair
+2023-05-24 19:17:34 [INFO] Starting Minecraft server on *:25565
+2023-05-24 19:17:34 [INFO] [Aroma1997Core] Finished Initialization.
+2023-05-24 19:17:34 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-24 19:17:55 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-05-24 19:18:13 [INFO] Preparing level "world"
+2023-05-24 19:18:17 [INFO] Preparing start region for level 0
+2023-05-24 19:18:18 [INFO] Preparing spawn area: 50%
+2023-05-24 19:18:18 [INFO] Done (5.246s)! For help, type "help" or "?"
+2023-05-24 19:18:18 [INFO] [Aroma1997Core] Starting up server.
+2023-05-24 19:18:21 [INFO] [Aroma1997Core] Started up server.
+2023-05-24 19:58:30 [INFO] Stopping the server
+2023-05-24 19:58:31 [INFO] Stopping server
+2023-05-24 19:58:31 [INFO] Saving players
+2023-05-24 19:58:31 [INFO] Saving worlds
+2023-05-24 19:58:31 [INFO] Saving chunks for level 'world'/Overworld
+2023-05-24 19:58:31 [INFO] Closing listening thread
+2023-05-24 19:58:31 [INFO] Saving chunks for level 'world'/Nether
+2023-05-24 19:58:31 [INFO] Saving chunks for level 'world'/The End
+2023-05-24 19:58:31 [INFO] Saving chunks for level 'world'/Promised Land
+2023-05-24 19:58:31 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-05-24 19:58:31 [INFO] Saving chunks for level 'world'/Bedrock
+2023-05-24 19:58:31 [INFO] Saving chunks for level 'world'/Underdark
+2023-05-24 19:58:32 [INFO] Stopping server
+2023-05-24 19:58:32 [INFO] Saving players
+2023-05-24 19:58:32 [INFO] Saving worlds
+2023-05-29 18:43:43 [INFO] Starting minecraft server version 1.6.4
+2023-05-29 18:44:22 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-29 18:44:30 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-29 18:45:19 [INFO] Loading properties
+2023-05-29 18:45:19 [INFO] Default game type: SURVIVAL
+2023-05-29 18:45:19 [INFO] Generating keypair
+2023-05-29 18:45:20 [INFO] Starting Minecraft server on *:25565
+2023-05-29 18:45:20 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-29 18:45:20 [INFO] [Aroma1997Core] Finished Initialization.
+2023-05-29 18:45:40 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-05-29 18:45:54 [INFO] Preparing level "world"
+2023-05-29 18:45:56 [INFO] Preparing start region for level 0
+2023-05-29 18:45:57 [INFO] Preparing spawn area: 64%
+2023-05-29 18:45:57 [INFO] Done (3.430s)! For help, type "help" or "?"
+2023-05-29 18:45:57 [INFO] [Aroma1997Core] Starting up server.
+2023-05-29 18:46:00 [INFO] [Aroma1997Core] Started up server.
+2023-05-29 21:47:32 [INFO] Stopping the server
+2023-05-29 21:47:33 [INFO] Stopping server
+2023-05-29 21:47:33 [INFO] Saving players
+2023-05-29 21:47:33 [INFO] Saving worlds
+2023-05-29 21:47:33 [INFO] Saving chunks for level 'world'/Overworld
+2023-05-29 21:47:33 [INFO] Closing listening thread
+2023-05-29 21:47:33 [INFO] Saving chunks for level 'world'/Nether
+2023-05-29 21:47:33 [INFO] Saving chunks for level 'world'/The End
+2023-05-29 21:47:33 [INFO] Saving chunks for level 'world'/Promised Land
+2023-05-29 21:47:33 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-05-29 21:47:33 [INFO] Saving chunks for level 'world'/Bedrock
+2023-05-29 21:47:33 [INFO] Saving chunks for level 'world'/Underdark
+2023-05-29 21:47:33 [INFO] Stopping server
+2023-05-29 21:47:33 [INFO] Saving players
+2023-05-29 21:47:33 [INFO] Saving worlds
+2023-05-30 20:04:22 [INFO] Starting minecraft server version 1.6.4
+2023-05-30 20:04:57 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-05-30 20:05:06 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-05-30 20:05:45 [INFO] Loading properties
+2023-05-30 20:05:45 [INFO] Default game type: SURVIVAL
+2023-05-30 20:05:45 [INFO] Generating keypair
+2023-05-30 20:05:46 [INFO] Starting Minecraft server on *:25565
+2023-05-30 20:05:46 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-05-30 20:05:46 [INFO] [Aroma1997Core] Finished Initialization.
+2023-06-02 22:45:21 [INFO] Starting minecraft server version 1.6.4
+2023-06-02 22:45:56 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-06-02 22:46:03 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-06-02 22:46:22 [INFO] Loading properties
+2023-06-02 22:46:22 [INFO] Default game type: SURVIVAL
+2023-06-02 22:46:22 [INFO] Generating keypair
+2023-06-02 22:46:22 [INFO] Starting Minecraft server on *:25565
+2023-06-02 22:46:22 [INFO] [Aroma1997Core] Finished Initialization.
+2023-06-02 22:46:22 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-06-02 22:46:31 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-06-02 22:46:41 [INFO] Preparing level "world"
+2023-06-02 22:46:43 [INFO] Preparing start region for level 0
+2023-06-02 22:46:44 [INFO] Done (2.645s)! For help, type "help" or "?"
+2023-06-02 22:46:44 [INFO] [Aroma1997Core] Starting up server.
+2023-06-02 22:46:47 [INFO] [Aroma1997Core] Started up server.
+2023-06-24 16:25:58 [INFO] Starting minecraft server version 1.6.4
+2023-06-24 16:26:32 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-06-24 16:26:42 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-06-24 16:27:21 [INFO] Loading properties
+2023-06-24 16:27:21 [INFO] Default game type: SURVIVAL
+2023-06-24 16:27:21 [INFO] Generating keypair
+2023-06-24 16:27:21 [INFO] Starting Minecraft server on *:25565
+2023-06-24 16:27:21 [INFO] [Aroma1997Core] Finished Initialization.
+2023-06-24 16:27:21 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-06-24 16:27:39 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-06-24 16:28:25 [INFO] Preparing level "world"
+2023-06-24 16:28:29 [INFO] Preparing start region for level 0
+2023-06-24 16:28:30 [INFO] Preparing spawn area: 29%
+2023-06-24 16:28:31 [INFO] Done (6.377s)! For help, type "help" or "?"
+2023-06-24 16:28:31 [INFO] [Aroma1997Core] Starting up server.
+2023-06-24 16:28:34 [INFO] [Aroma1997Core] Started up server.
+2023-06-24 16:28:37 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2023-06-24 16:32:48 [INFO] Stopping the server
+2023-06-24 16:32:48 [INFO] Stopping server
+2023-06-24 16:32:48 [INFO] Saving players
+2023-06-24 16:32:48 [INFO] Saving worlds
+2023-06-24 16:32:48 [INFO] Saving chunks for level 'world'/Overworld
+2023-06-24 16:32:48 [INFO] Closing listening thread
+2023-06-24 16:32:48 [INFO] Saving chunks for level 'world'/Nether
+2023-06-24 16:32:48 [INFO] Saving chunks for level 'world'/The End
+2023-06-24 16:32:48 [INFO] Saving chunks for level 'world'/Promised Land
+2023-06-24 16:32:48 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-06-24 16:32:48 [INFO] Saving chunks for level 'world'/Bedrock
+2023-06-24 16:32:48 [INFO] Saving chunks for level 'world'/Underdark
+2023-06-24 16:32:49 [INFO] Stopping server
+2023-06-24 16:32:49 [INFO] Saving players
+2023-06-24 16:32:49 [INFO] Saving worlds
+2023-06-24 16:35:00 [INFO] Starting minecraft server version 1.6.4
+2023-06-24 16:35:38 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2023-06-24 16:35:47 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2023-06-24 16:36:46 [INFO] Loading properties
+2023-06-24 16:36:46 [INFO] Default game type: SURVIVAL
+2023-06-24 16:36:46 [INFO] Generating keypair
+2023-06-24 16:36:46 [INFO] Starting Minecraft server on *:25565
+2023-06-24 16:36:46 [INFO] [Aroma1997Core] Finished Initialization.
+2023-06-24 16:36:46 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2023-06-24 16:37:05 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2023-06-24 16:37:36 [INFO] Preparing level "world"
+2023-06-24 16:37:37 [INFO] Preparing start region for level 0
+2023-06-24 16:37:38 [INFO] Done (2.747s)! For help, type "help" or "?"
+2023-06-24 16:37:38 [INFO] [Aroma1997Core] Starting up server.
+2023-06-24 16:37:41 [INFO] [Aroma1997Core] Started up server.
+2023-06-24 16:37:56 [INFO] Stopping the server
+2023-06-24 16:37:56 [INFO] Stopping server
+2023-06-24 16:37:56 [INFO] Saving players
+2023-06-24 16:37:56 [INFO] Saving worlds
+2023-06-24 16:37:56 [INFO] Saving chunks for level 'world'/Overworld
+2023-06-24 16:37:56 [INFO] Closing listening thread
+2023-06-24 16:37:56 [INFO] Saving chunks for level 'world'/Nether
+2023-06-24 16:37:56 [INFO] Saving chunks for level 'world'/The End
+2023-06-24 16:37:56 [INFO] Saving chunks for level 'world'/Promised Land
+2023-06-24 16:37:56 [INFO] Saving chunks for level 'world'/Twilight Forest
+2023-06-24 16:37:56 [INFO] Saving chunks for level 'world'/Bedrock
+2023-06-24 16:37:56 [INFO] Saving chunks for level 'world'/Underdark
+2023-06-24 16:37:57 [INFO] Stopping server
+2023-06-24 16:37:57 [INFO] Saving players
+2023-06-24 16:37:57 [INFO] Saving worlds
+2025-09-13 17:32:03 [INFO] Starting minecraft server version 1.6.4
+2025-09-13 17:32:33 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2025-09-13 17:32:41 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2025-09-13 17:33:12 [INFO] Loading properties
+2025-09-13 17:33:12 [INFO] Default game type: SURVIVAL
+2025-09-13 17:33:12 [INFO] Generating keypair
+2025-09-13 17:33:12 [INFO] Starting Minecraft server on *:25565
+2025-09-13 17:33:12 [INFO] [Aroma1997Core] Finished Initialization.
+2025-09-13 17:33:12 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2025-09-13 17:33:28 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2025-09-13 17:33:45 [INFO] Preparing level "world"
+2025-09-13 17:33:49 [INFO] Preparing start region for level 0
+2025-09-13 17:33:50 [INFO] Preparing spawn area: 32%
+2025-09-13 17:33:50 [INFO] Done (5.707s)! For help, type "help" or "?"
+2025-09-13 17:33:50 [INFO] [Aroma1997Core] Starting up server.
+2025-09-13 17:33:53 [INFO] [Aroma1997Core] Started up server.
+2025-09-13 17:45:34 [SEVERE] Reached end of stream for /192.168.0.22
+2025-09-13 17:45:41 [INFO] Skymoeba[/192.168.0.22:63366] logged in with entity id 461 at (-53.27693311676542, 42.0, 448.2883231068378)
+2025-09-13 17:45:41 [INFO] Skymoeba joined the game
+2025-09-13 17:52:56 [INFO] Skymoeba lost connection: disconnect.quitting
+2025-09-13 17:52:56 [INFO] Skymoeba left the game
+2025-09-13 18:25:14 [INFO] Starting minecraft server version 1.6.4
+2025-09-13 18:25:21 [INFO] [Aroma1997Core] Finished Pre-initialization.
+2025-09-13 18:25:24 [INFO] [Aroma1997CoreHelper] Helping Aroma1997Core
+2025-09-13 18:25:37 [INFO] Loading properties
+2025-09-13 18:25:37 [INFO] Default game type: SURVIVAL
+2025-09-13 18:25:37 [INFO] Generating keypair
+2025-09-13 18:25:37 [INFO] Starting Minecraft server on *:25565
+2025-09-13 18:25:37 [INFO] [Aroma1997Core] Finished Initialization.
+2025-09-13 18:25:37 [INFO] [Aroma1997Core] Finished Post-Initialization.
+2025-09-13 18:25:43 [INFO] [qCraft] Loading qCraft v1.1 (rev 253)
+2025-09-13 18:25:51 [INFO] Preparing level "world"
+2025-09-13 18:25:52 [INFO] Preparing start region for level 0
+2025-09-13 18:25:52 [INFO] Done (1.339s)! For help, type "help" or "?"
+2025-09-13 18:25:52 [INFO] [Aroma1997Core] Starting up server.
+2025-09-13 18:25:55 [INFO] [Aroma1997Core] Started up server.
+2025-09-13 18:26:43 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
